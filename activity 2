@@ -1,0 +1,15 @@
+class Shape:
+    def __init__(self, color):
+        self.__color = color
+
+    def get_color(self):
+        return self.__color
+
+    def set_color(self, new_color):
+        self.__color = new_color
+
+# Usage
+shape = Shape("Red")
+print("Shape color:", shape.get_color())
+shape.set_color("Blue")
+print("Updated color:", shape.get_color())
